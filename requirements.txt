@@ -1,0 +1,12 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+numpy>=1.24.0
+pillow>=10.0.0
+python-multipart==0.0.6
+pydantic>=2.5.0
+
+# Optional: Uncomment one based on your Python version
+# For Python 3.10-3.11: pip install tensorflow==2.14.0
+# For Python 3.12: pip install tensorflow==2.21.0 (or later)
+# tensorflow>=2.14.0
+

@@ -1,75 +1,63 @@
-# ─── Dependencies ─────────────────────────────────────────
-node_modules/
-.pnp
-.pnp.js
-
-# ─── Build Output ─────────────────────────────────────────
-.next/
-out/
-build/
-dist/
-export/
-
-# ─── Environment & Secrets ─────────────────────────────────
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# ─── IDE & Editor ─────────────────────────────────────────
-.idea/
-*.iml
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
-*.swp
-*.swo
-*~
-.DS_Store
-
-# ─── OS Files ─────────────────────────────────────────────
-Thumbs.db
-Desktop.ini
-ehthumbs.db
-
-# ─── TypeScript ───────────────────────────────────────────
-*.tsbuildinfo
-next-env.d.ts
-tsconfig.tsbuildinfo
-
-# ─── Debug Logs ───────────────────────────────────────────
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# ─── Python (Model Conversion) ────────────────────────────
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
 *.egg-info/
 dist/
 build/
 *.egg
-.venv/
-.venv312/
+.eggs/
+
+# Virtual environments
 venv/
+.venv/
 env/
+.env
+*.venv
 
-# ─── TFJS Converted Model (keep only source .h5/.keras) ──
-public/model/*.bin
-!public/model/.gitkeep
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# ─── Coverage & Reports ───────────────────────────────────
-coverage/
-coverage.json
-*.lcov
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
 
-# ─── Misc ─────────────────────────────────────────────────
-*.pem
-*.tar.gz
-*.tgz
-.cache/
-tmp/
-temp/
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Model files (large — uncomment if you want to track)
+# Models/*.keras
+# Models/*.h5
+# Models/*.pb
+# Models/*.tflite
+
+# TensorFlow / Keras
+saved_model/
+keras_metadata.pb
+
+# Logs
+*.log
+logs/
+
+# Docker
+.docker/
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Misc
+*.tmp
+*.bak
